@@ -1,0 +1,160 @@
+html {
+  font-size: 12px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include laptop {
+    font-size: 16px;
+  }
+}
+
+
+body {
+  background-color: $black2;
+  color: $white;
+  font-family: $copy-font;
+  line-height: 1.5em;
+
+  h1, h2, .title-h1 {
+    font-family: $header-font;
+    padding: 1rem 0;
+    line-height: 1em;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  p {
+    padding: 1rem 0;
+    text-align: left;
+
+    @include tablet {
+      padding: 1rem;
+    };
+  }
+
+  blockquote {
+    font-family: $header-font;
+    font-size: 1.4em;
+    background-color: $grey;
+    padding: 2rem 2rem 2rem 5rem;
+    line-height: 1.1em;
+    color: $white;
+  }
+
+  blockquote::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  font-family: $header-font;
+  font-size: 4em;
+  position: absolute;
+  left: 3rem;
+  padding: 1rem 0 0 0;
+
+  @include tablet {
+    left: 11%;
+  };
+}
+
+
+.main-about {
+  @include tablet{
+    background-color: $white;
+    color: $black;
+    width: 650px;
+  };
+}
+
+
+  main {
+    padding: 1rem;
+    margin: auto;
+    width: 95%;
+
+    @include tablet {
+      padding: 1rem;
+
+      h2 {
+        padding-bottom: 3rem;
+        text-align: center;
+      }
+    }
+
+
+    ul {
+      list-style: circle;
+      text-align: left;
+      padding: 0 0 0 3rem;
+
+      li {
+        padding: .5rem 0;
+      }
+    }
+}
+
+section {
+      padding: 2rem 0;
+      border-bottom: .05px solid $black;
+
+      .img-lg {
+        width: 100%;
+      }
+
+      @include tablet {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+      }
+
+      .copy-link {
+        border-bottom: .2px solid $grey;
+        cursor: pointer;
+       }
+
+       a:link, a:visited {
+         color: $grey;
+       }
+
+.img-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+
+      .img-grid {
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        width: 33%;
+
+        h3 {
+          font-size: .8em;
+        }
+
+        .img-round {
+          width: 90%;
+          border-radius: 50%;
+        }
+      }
+    }
+}
+
+
+.grid-container2 {
+
+      .renee-img {
+        width: 100%;
+        margin: 0;
+
+        @include tablet {
+          padding: .5rem;
+        };
+      }
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: 50% 50% 50% 50%;
+      };
+    }
+
+  }

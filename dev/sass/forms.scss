@@ -1,0 +1,36 @@
+main {
+
+  form {
+    border: 1px solid $white;
+    padding: 1rem;
+
+    @include tablet {
+        width: 60%;
+        margin: auto;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin: .25rem 0;
+      background-color: $white;
+    }
+
+    .big-input {
+      height: 10rem;
+    }
+
+    .submit {
+      color: $white;
+      border: 1px solid $white;
+      background-color: $plum;
+      padding: .5rem;
+      margin-top: 1rem;
+    }
+
+    .submit:hover {
+      background-color: $grey;
+    }
+  }
+
+}
