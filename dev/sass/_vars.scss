@@ -5,9 +5,10 @@ $grey: #6c7888;
 $plum: #412428;
 $white: #f9f3ea;
 
-$header-font: 'Righteous', cursive;
+$header-font: 'Righteous', sans-serif;
 $copy-font: 'Open Sans', sans-serif;
 
+$mobile-width: "screen and (min-width: 1px)";
 $phablet-width: "screen and (min-width: 375px)";
 $tablet-width: "screen and (min-width: 720px)";
 $laptop-width: "screen and (min-width: 1024px)";

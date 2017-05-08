@@ -25,6 +25,10 @@ body {
 
   h2 {
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 2.3em;
+    }
   }
 
   p {
@@ -43,6 +47,7 @@ body {
     padding: 2rem 2rem 2rem 5rem;
     line-height: 1.1em;
     color: $white;
+    position: relative;
   }
 
   blockquote::before {
@@ -50,7 +55,7 @@ body {
   font-family: $header-font;
   font-size: 4em;
   position: absolute;
-  left: 3rem;
+  left: 2rem;
   padding: 1rem 0 0 0;
 
   @include tablet {
@@ -68,7 +73,7 @@ body {
 }
 
 
-  main {
+main {
     padding: 1rem;
     margin: auto;
     width: 95%;
@@ -96,7 +101,6 @@ body {
 
 section {
       padding: 2rem 0;
-      border-bottom: .05px solid $black;
 
       .img-lg {
         width: 100%;
@@ -104,7 +108,7 @@ section {
 
       @include tablet {
         text-align: center;
-        width: 70%;
+        width: 90%;
         margin: auto;
       }
 
@@ -117,18 +121,27 @@ section {
          color: $grey;
        }
 
+
 .img-grid-container {
         display: flex;
         flex-wrap: wrap;
 
       .img-grid {
         text-align: center;
-        padding: 0;
+        padding: 1rem;
         margin: auto;
-        width: 33%;
+        width: 100%;
+
+        @include tablet {
+          width: 33%;
+        }
 
         h3 {
           font-size: .8em;
+
+          @include phablet {
+            font-size: 1.25em;
+          };
         }
 
         .img-round {

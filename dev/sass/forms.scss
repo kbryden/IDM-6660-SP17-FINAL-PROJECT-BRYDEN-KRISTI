@@ -1,5 +1,30 @@
 main {
 
+  .contactus {
+
+    ul {
+      list-style: none;
+      text-align: left;
+      width: 30rem;
+
+      @include tablet {
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        padding: 0 0 3rem 0;
+        margin: auto;
+      }
+    }
+
+    h3 {
+      padding-bottom: 1rem;
+    }
+
+    a:link, a:visited {
+      color: $white;
+    }
+  }
+
   form {
     border: 1px solid $white;
     padding: 1rem;
@@ -16,8 +41,11 @@ main {
       background-color: $white;
     }
 
-    .big-input {
+    textarea {
       height: 10rem;
+      width: 100%;
+      padding: 1em;
+      font-family: $copy-font;
     }
 
     .submit {

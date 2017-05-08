@@ -1,3 +1,9 @@
+@mixin mobile {
+  @media #{$mobile-width} {
+    @content;
+  }
+}
+
 @mixin phablet {
   @media #{$phablet-width} {
     @content;
